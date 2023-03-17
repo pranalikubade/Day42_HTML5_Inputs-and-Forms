@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Input Types</title>
+    <link rel="stylesheet" href="../CSS/InputForm.css">
+    <script src="../JS/InputForm.js"></script>
+   
+</head>
+<body>
+    <form>
+        <header class ="headerContainer"><h1>HTML 5 Form Input Fields</h1></header>
+        <div>
+            <label for="text"> Text input type for Name:</label>
+            <input type="text" id="text" name="text">
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+
+        <div>
+            <label for="pwd"> Password input type:</label>
+            <input type="pwd" id="pwd" name="pwd" required>
+            <error-output class="pwd-error" for="pwd"></error-output>
+        </div>
+
+        <div>
+            <label for="email"> Email input type:</label>
+            <input type="email" id="email" name="email">
+            <error-output class="email-error" for="email"></error-output>
+        </div>
+
+        <div>
+            <label for="url"> Url input type:</label>
+            <input type="url" id="url" name="url">
+        </div>
+
+        <div>
+            <label for="Number"> MOb Number input type:</label>
+            <input type="Number" id="Number" name="Number">
+            <error-output class="Number-error" for="Number"></error-output>
+        </div>
+
+        <div>
+            <label for="Tel"> Tel input type:</label>
+            <input type="Tel" id="Tel" name="Tel">
+        </div>
+
+        <div>
+            <label for="Search"> Search input type:</label>
+            <input type="Search" id="Search" name="Search">
+        </div>
+
+        <div class="nativeDateTimePicker">
+            <label for="StartDate"> Choose a date and time</label>
+            <input type="datetime-local" id="StartDate" name="StartDate">
+        </div>
+
+        <div>
+            <label for="Salary"> Choose your Salary</label>
+            <input type="range" id="Salary" name="Salary" min="300000"
+            max="500000" step="100" value="400000">
+            <output class="Salary-output" for="Salary">400000</output>
+        </div>
+
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>
